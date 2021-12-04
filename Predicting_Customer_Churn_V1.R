@@ -257,7 +257,7 @@ confusionMatrix(factor(pred2), factor(valid.df$Churn), positive = "Yes")
 #RANDOM FOREST MODEL
 
 #Initial Model
-rfModel <- randomForest(Churn ~., data = training)
+rfModel <- randomForest(Churn ~., data = train.df)
 rfModel
        
 #Random Forest Prediction and Confusion Matrix
